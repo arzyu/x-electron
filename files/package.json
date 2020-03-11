@@ -1,0 +1,22 @@
+{
+  "name": "${name}",
+  "version": "0.1.0",
+  "description": "${description}",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "start:debug": "node --inspect-brk -r ts-node/register src/index.ts",
+    "prebuild": "rm -rf dist",
+    "build": "tsc",
+    "prepare": "npm run build"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "ts-node": "8.6.2",
+    "typescript": "3.8.3"
+  },
+  "private": true
+}

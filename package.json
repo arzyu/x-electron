@@ -1,0 +1,6 @@
+{
+  "name": "x-electron",
+  "version": "0.1.0",
+  "description": "electron project",
+  "private": true
+}
